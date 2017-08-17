@@ -50,7 +50,6 @@ scores = model.evaluate(values, labels)
 print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
 
 #prediction
-print ("Prediction for : ")
-print (test_data)
+print ("Prediction for : " , test_data)
 prediction = model.predict(numpy.array([test_data]))
 print (prediction)
